@@ -1,0 +1,121 @@
+.errorMsg {
+	color: #FF0000;
+	padding: 0px 0px 0px 10px;
+	display: none;
+	background-color: white;
+}
+table {
+	display: table;
+	border-collapse: separate;
+	border-spacing: 1px;
+	border-color: white;
+}
+body, td, th {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+}
+.li {
+	float: left;
+	padding: 5px 5px 0 0px;
+	font-size: 10;
+	color: #999999;
+	background-color: white;
+	display: block;
+}
+.ul {
+	float: left;
+	padding: 5px 5px 0 0px;
+	font-size: 10;
+	color: #999999;
+	background-color: white;
+	display: block;
+}
+.black_overlayRegistrationLogin{
+        display: none;
+        position: fixed;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        z-index:1001;
+        -moz-opacity: 0.8;
+        opacity:.80;
+        filter: alpha(opacity=80);
+    }
+.white_contentRegistration {
+	display: none;
+	position: fixed;
+	top: 0%;
+	left: 20%;
+	width: 55%;
+	height: 100%;
+	padding: 16px;
+	border: 16px solid #7E5377;
+	;
+	background-color: white;
+	z-index: 1002;
+	overflow: auto;
+}
+.white_contentLogin {
+	display: none;
+	position: fixed;
+	top: auto;
+	left: 61.5%;
+	width: 27%;
+	height: auto;
+	padding: 16px;
+	border: 16px solid #660066;
+	;
+	background-color: white;
+	z-index: 1002;
+	overflow: auto;
+}
+.white_contentMyAccount {
+	display: none;
+	position: fixed;
+	top: auto;
+	left: 73.5%;
+	width: 12.5%;
+	height: auto;
+	padding: 16px;
+	border: 16px solid #660066;
+	;
+	background-color: white;
+	z-index: 1002;
+	overflow: auto;
+}
+.MyAccount {
+	color:blue;
+	font-size:12px;
+	background:#FFFFFF;		
+	line-height:1.0rem;
+	padding:0px;
+}
+.black_overlay {
+	display: none;
+	position: fixed;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	z-index: 1001;
+	-moz-opacity: 0.8;
+	opacity: .80;
+	filter: alpha(opacity=80);
+}
+.white_content {
+	display: none;
+	position: fixed;
+	top: 5%;
+	left: 25%;
+	width: 50%;
+	height: 90%;
+	padding: 16px;
+	border: 16px solid gray;
+	background-color: white;
+	z-index: 1002;
+	overflow: auto;
+}

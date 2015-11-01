@@ -1,0 +1,496 @@
+﻿<!doctype html>
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>UPMC Pharmacy</title>
+<link rel="stylesheet" href="css/script.css"/>
+<link rel="stylesheet" href="css/registration.css" />
+<link rel="stylesheet" href="css/foundation.css" />
+<link rel="stylesheet" href="css/custom.css" />
+
+<script type="text/javascript" src="../Super8_Task4-/script/objectVisibility.js"></script>
+<script type="text/javascript" src="../Super8_Task4-/script/textboxBehavior.js"></script>
+<script type="text/javascript" src="../Super8_Task4-/script/formValidation.js"></script>
+<script type="text/javascript" src="../Super8_Task4-/script/grayOut.js"></script>
+</head>
+
+<body>
+<div class="large-12 columns">
+<div class="row">
+  <div class="large-12 columns">
+    <nav class="top-bar" data-topbar>
+      <div class="large-2 columns"> <a href="index.html"><img src="images/upmc_logo.jpg"></a> </div>
+      <div class="large-8 columns">
+        <input type="search"   
+                               name="searchTerm" 
+                               placeholder="Search" 
+                               autocomplete="off" 
+                               autocapitalize="off" 
+                               autocorrect="off" 
+                               data-options="{'limit':3}"
+							   data-touch-text="Search" maxlength="100"/>
+      </div>
+                  <div> <a href="searchResultPage-View.html"> <img src="images/searhimages.png" width="30" height="30"/> </a> </div>
+    </nav>
+  </div>
+</div>
+<div class="row">
+  <div class="large-12 columns">
+    <nav class="top-bar" data-topbar>
+      <section class="top-bar-section">
+        <ul class="left">
+		  <li class="divider"></li>
+		  <li><a href="index.html">Home</a></li>
+          <li class="divider"></li>
+          <li class="has-dropdown"> <a href="#">Category</a>
+            <ul class="dropdown">
+              <li><a href="searchResultPage.html">Allergy Asthma</a></li>
+              <li><a href="searchResultPage.html">Braces & Support</a></li>
+              <li><a href="searchResultPage.html">Cough, Cold & Flu</a></li>
+              <li><a href="searchResultPage.html">Digestive Health</a></li>
+              <li><a href="searchResultPage.html">First Aid</a></li>
+              <li><a href="searchResultPage.html">Pain & Fever</a></li>
+              <li><a href="searchResultPage.html">Sleep & Snoring Aids</a></li>
+              <li><a href="searchResultPage.html">Stop Smoking</a></li>
+            </ul>
+          </li>
+          <li class="divider"></li>
+			  <li><a href="about-us.html">About Us</a></li>
+			  <li class="divider"></li>
+			  <li class="has-dropdown"><a href="#">Contact Us</a>
+                <ul class="dropdown">
+                    <li><a href="#"><strong>UPMC</strong>, 200 Lothrop St, Pittsburgh, PA 15213<br></a></li>
+					<li><a href="#"><strong>Phone</strong>: (412) 647-8762<br></a></li>
+					<li><a href="#"><strong>E-mail</strong>: info@UPMCpharmarcy.com</a></li>
+                </ul>
+              </li>
+        </ul>
+        <ul class="right">
+          <li class="divider"></li>
+          <li > <a id="anchorLogin" href="#" onclick="changeText('anchorLogin');">Hello Mike (Logout)</a>
+                  <div id="loginContainer" class="white_contentLogin"> 
+                   <!--<script type="text/javascript">fadeOutObj('loginContainer', 1);</script>-->
+                    <div id="loginStepContainer">
+                      <div> <strong>Email &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="img/btn_close.png" onclick = "document.getElementById('loginContainer').style.display='none';		document.getElementById('fade').style.display='none'" width="30" height="30"/></strong><br />
+                        <input name="txtUsername" type="text" class="initValStyle" id="txtUsername" onfocus="onFocus(this, 'type your email here')" onblur="onBlur(this)" value="type your email here" size="35" />
+                      </div>
+                      <br />
+                      <div> <strong>Password</strong><br />
+                        <input name="txtPassword" type="password" id="txtPassword" placeholder="password"  size="35" >
+                      </div>
+                      <div>
+                        <input type="checkbox" style="color:white"/>
+                        Remember me </div>
+                      <div >
+                        <input name="btnLogin" type="submit" id="btnLogin" value="Login"  class="small button"  onClick="changeText('btnLogin');"/>
+                        <a href="under_construction.html" style="color:blue; background-color:white; font-size:14px">Forgot your password?</a>
+                      </div>
+                      <div> 
+
+                      <br />
+                      
+                        <div style="color: black ; background-color:white ;  font-size:14px" >Register using:</div> </div>
+                      <div> <a href="#" onClick="changeText('btnLogin');" style="background-color:white"> <img src="images/facebookicon.jpg" width ="25" > </a> <a href="#" onClick="changeText('btnLogin');" style="background-color:white"> <img src="images/pinteresticon.jpg" width ="25" > </a> <a href="#" onClick="changeText('btnLogin');" style="background-color:white"> <img src="images/twittericon.jpg" width ="25" > </a> <a href="#" onClick="changeText('btnLogin');" style="background-color:white"> <img src="images/googleicon.jpg" width ="25" > </a> </div>
+                    </div>
+                  </div>
+                </li>
+          <li class="divider"></li>
+          <li class="divider"></li>
+          <li>
+                  <div id="registerContainer"> <a id ="registerorProfleLink" href = "javascript:void(0)" title="Account Registration" target="_blank" onclick = "callDivRegisterOrProfile('registerorProfleLink');"  style="color:white; align-content:center; font-size:14px">My Account</a> </div>
+                  <div id="registerContainerSub" class="white_contentRegistration">
+                    <table width="625" border="0" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td id="tdEmailErrorScope" colspan="2"><strong>Email<sup style="color:red; font-size:14px" >&nbsp;*</sup></strong><br />
+                          <input name="txtEmail" type="text" id="txtEmail" size="35"  placeholder="username@domain.com"
+                          onblur="validateEmail(this,'tdEmailErrorScope','divEmailErrorMsg')" />
+                          <div id="divEmailErrorMsg" class="errorMsg"> <br />
+                            please ensure the email address you enter is correct e.g. youruser@domain.com </div></td>
+                        <td></td>
+                        <td></td>
+                        <td align="right" valign="top"><img src="img/btn_close.png" onclick = "document.getElementById('registerContainerSub').style.display='none';document.getElementById('fade').style.display='none'" width="30" height="30"/></td>
+                      </tr>
+                      <tr>
+                      <tr>
+                        <td id="tdPasswordErrorScope"><strong>Password <sup style="color:red; font-size:14px" >&nbsp;*</sup></strong>
+                          <input name="txtFirstPassword" type="password"   id="txtFirstPassword" size="15" maxlength= "20" placeholder="Password" value="" /></td>
+                        <td id="tdPasswordErrorScope"><strong>Confirm Password <sup style="color:red; font-size:14px" >&nbsp;*</sup></strong>
+                          <input name="txtRePassword" type="password" id="txtRePassword" size="15" maxlength="20" placeholder="Confirm Password"
+                       onblur= "validatePassword('txtFirstPassword' ,'txtRePassword', 'tdPasswordErrorScope', 'spnPasswordErrorMsg')" /></td>
+                      </tr>
+                      <tr>
+                        <td colspan="2"><div id="spnPasswordErrorMsg" class="errorMsg"> Entered passwords are not matched </div></td>
+                      </tr>
+                        </tr>
+                      
+                      <tr>
+                        <td><strong>First Name <sup style="color:red; font-size:14px" >&nbsp;*</sup></strong>
+                          <input name="txtFN" type="text" id="txtFN" size="30" placeholder="First Name" /></td>
+                        <td><strong>Last Name <sup style="color:red; font-size:14px" >&nbsp;*</sup></strong>
+                          <input name="txtLN" type="text" id="txtLN" size="30" placeholder="Last Name" /></td>
+                      </tr>
+                      <tr>
+                        <td colspan="2"><strong>Address </strong><br />
+                          <input name="txtStreet" type="text" id="txtStreet" size="25" placeholder="Address Line 1 (Optional)"/>
+                          <input name="txtNumber" type="text" id="txtNumber" size="25"  placeholder="Address Line 2 (Optional)"/>
+                          <input name="txtCity" type="text" id="txtCity" size="25" placeholder="City (Optional)"/>
+                          <input name="txtPostal" type="text" id="txtPostal" size="25"  placeholder="Postal Code (Optional)"/>
+                          <select name="ddlCountry" id="ddlCountry" style="width:200px">
+                            <option>United States</option>
+                            <option>Others</option>
+                          </select></td>
+                      </tr>
+                      <tr>
+                        <td style="padding-top:5px" colspan="2"><input name="chkAccept" type="checkbox" id="chkAccept" />
+                          I agree to abide by UPMC. <a href="under_construction.html" style="color:white">Terms & Conditions</a></td>
+                      </tr>
+                      <tr>
+                        <td><input name="btnRegister" type="button" id="btnRegister" class="small button" value="Register" style="width:100px" onclick="fakeAjaxReg('registerContainerSub', 'regCompMsg');	" /></td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div id="regCompMsg" style="display:none;" class="white_contentRegistration"> <br />
+                    <br />
+                    <br />
+                    <br />
+                    <strong style="font-size:16px">Registration complete, </strong><br />
+                    <br />
+                    Thank you very much for registering with UPMC.<br />
+                    Please click the "Done" button below to close this registration page. <br />
+                    To start login, please use "Login" button at top right corner. <br />
+                    <br />
+                    <input type="button" value="Done"  class="small button" style="width:100px" onclick="document.location.reload();" />
+                  </div>
+                  <div id = "myaccountContainer" style="display:none" class="has-dropdown">                  
+                  <ul>
+                  <li ><a href="under_construction.html" >Profile</a></li><br />
+                  <li ><a href="under_construction.html" >Track Order</a></li><br />
+                  <li ><a href="under_construction.html" >My Subscriptions</a></li></ul>
+                  </div>
+    </li>
+          <li class="divider"></li>
+          <li class="divider"></li>
+          <li><a href="cart.html">Cart</a></li>
+          <li class="divider"></li>
+        </ul>
+      </section>
+    </nav>
+  </div>
+</div>
+
+ <div class="row">	</br> </div>	  
+          <div class="row">
+            <div class="large-3 small-6 columns">
+			    <div class="panel"> 
+                  <p><a href="searchResultPage.html" class="small button">Refine Selection</a></p>
+                  <p>Brands </p>
+                    <div class="panel">
+					   <input value="true" type="checkbox"> Rainbow Light</input></br>
+					   <input value="true" type="checkbox"> Centrum</input></br>
+					   <input value="true" type="checkbox"> One-A-day</input></br>
+					   <input value="true" type="checkbox"> Nature's Way</input></br>
+					   <input value="true" type="checkbox"> Twin Lab</input></br>
+					</div>
+				
+			    Prices
+				    <div class="panel">
+					   <input value="true" type="checkbox"> $5-$10</input></br>
+					   <input value="true" type="checkbox"> $10-$15</input></br>
+					   <input value="true" type="checkbox"> $15-$20</input></br>
+					   <input value="true" type="checkbox"> $20-$25</input></br>
+					   <input value="true" type="checkbox"> $25-$30</input></br>
+					</div>
+				
+			    Reviews
+				    <div class="panel">
+					   <input value="true" type="checkbox"><img src="images/ratestar.jpg" width="94" height="16">    
+						</input></br>
+					   <input value="true" type="checkbox"><img src="images/ratestar4.jpg" width="94" height="16"></input></br>
+					   <input value="true" type="checkbox"><img src="images/ratestar3.jpg" width="94" height="16"></input></br>
+					   <input value="true" type="checkbox"><img src="images/ratestar2.jpg" width="94" height="16"></input></br>
+					   <input value="true" type="checkbox"><img src="images/ratestar1.jpg" width="94" height="16"></input></br>
+					</div>
+				
+			    Age
+				    <div class="panel">
+					   <input value="true" type="checkbox"> Baby/Infant</input></br>
+					   <input value="true" type="checkbox"> Child</input></br>
+					   <input value="true" type="checkbox"> Adult</input></br>
+					   <input value="true" type="checkbox"> Senior</input></br>
+					</div>
+				</br>
+				</div>
+				
+            </div>
+     
+     
+            <div class="large-9 columns">
+                			<div class="row">
+			    <div class="small-4 columns">
+			        <span itemscope="" itemtype="http://schema.org/BreadcrumbList">
+					<a href="index.html"><span style="font-size: medium" itemprop="name">Home</span></a>
+					<meta itemprop="position" content="1">><a href="index.html">
+					<span style="font-size: medium" itemprop="name">Menu</span></a>
+					<meta itemprop="position" content="2">><a href="searchResultPage-ListView-Price-LowtoHigh.html">
+					<span style="font-size: medium" itemprop="name">Vitamins</span></a>
+				</div>
+			</div>
+			<div class="row">	</br></div>
+			<div class="row">
+			    <div class="small-4 columns">
+			        <ul class="pagination pull-right">
+						<li class="disabled"><a href="searchResultPage-ListView-Price-LowtoHigh.html">«</a></li>
+						<li class="active"><a href="searchResultPage-ListView-Price-LowtoHigh.html">1</a></li>
+						<li><a href="searchResultPage-ListView-Price-LowtoHigh.html">2</a></li>
+						<!--<li><a href="searchResultPage.html">3</a></li>
+						<li><a href="searchResultPage.html">4</a></li>
+						<li><a href="searchResultPage.html">5</a></li> -->
+						<li><a href="searchResultPage-ListView-Price-LowtoHigh.html">....</a></li>
+						<li><a href="searchResultPage-ListView-Price-LowtoHigh.html">93</a></li>
+						<li><a href="searchResultPage-ListView-Price-LowtoHigh.html">»</a></li>
+					</ul>
+				</div>
+				<div class="small-4 columns">
+				    <p class="price">
+					    <a href="searchResultPage-Price-LowtoHigh.html"><img src="images/grid.png"/></a>
+						<a href="searchResultPage-ListView-Price-LowtoHigh.html"><img src="images/list.png"/></a>
+					</p>
+				</div>
+				<div class="small-4 columns">
+			        <p class="price">
+					    <select name="select" onchange="javascript:location.href = this.value;">
+						    <option value="searchResultPage.html">Sort By</option>
+							<option value="searchResultPage-ListView.html">Relevance</option>
+							<option value="searchResultPage-ListView-Price-LowtoHigh.html" selected>Price (low to high)</option>
+							<option value="searchResultPage-ListView-Price-HightoLow.html">Price (high to low)</option>
+							<option value="#">Name (A-Z)</option>
+							<option value="#">Name (Z-A)</option>
+							<option value="#">Reviews</option>
+						</select>
+					</p>
+				</div>
+			</div>
+            			<div class="row">
+			    <div class="small-12 columns">
+				    <div class="small-4 columns">
+                    <a href="product detail_2.html">
+					<div class="image-wrapper overlay-fade-in">					  
+					  <!-- <img src="https://tourneau.scene7.com/is/image/tourneau/DEV9900004?hei=450&wid=300&fmt=png-alpha&resMode=bicub&op_sharpen=1" /> -->
+                      <img src="images/vitamin2.jpg"/>					  
+					  <div class="image-overlay-content">
+						<h2>Natures Bounty</h2>
+						<p class="price">$9.99</p>
+						<!-- <a href="images/vitamin1.jpg" class="button">Get it</a> -->
+					  </div>                      					  
+					</div>
+                    </a>
+					</div>
+					<div class="small-4 columns" valign="center">
+					<div class="caption">
+					  </br></br>
+                      <h4 class="subheader"><b>Natures Bounty</b></h4>
+					  <img src="images/ratestar.jpg" width="94" height="16">                      
+					  <h6 class="subheader">Tablets:100</h6>
+					  <h6 class="subheader">EAWeight:0.8 LBS</h6>
+                    </div>
+					</div>
+					<div class="small-4 columns" valign="center">
+					<div class="caption">
+					  </br></br>                      
+                      <h3 class="subheader"><b>$9.99</b></h3>
+					  <h6 class="subheader">Buy 2, Get 1 Free</h6>
+					  <a href="cart.html" class="small button">Add To Cart</a>
+                    </div>
+					</div>
+				</div>    
+			</div>
+			<div></br></div>
+            <div class="row">
+			    <div class="small-12 columns">
+				    <div class="small-4 columns">
+                    <a href="product detail_1.html">
+					<div class="image-wrapper overlay-fade-in">					  
+					  <!-- <img src="https://tourneau.scene7.com/is/image/tourneau/DEV9900004?hei=450&wid=300&fmt=png-alpha&resMode=bicub&op_sharpen=1" /> -->
+                      <img src="images/vitamin1.jpg"/>					  
+					  <div class="image-overlay-content">
+						<h2>Melatonin</h2>
+						<p class="price">$11.49</p>
+						<!-- <a href="images/vitamin1.jpg" class="button">Get it</a> -->
+					  </div>                      					  
+					</div>
+                    </a>
+					</div>
+					<div class="small-4 columns" valign="center">
+					<div class="caption">
+					  </br></br>
+                      <h4 class="subheader"><b>Melatonin</b></h4>
+					  <img src="images/ratestar.jpg" width="94" height="16">                      
+					  <h6 class="subheader">Tablets:100</h6>
+					  <h6 class="subheader">EAWeight:0.6 LBS</h6>
+                    </div>
+					</div>
+					<div class="small-4 columns" valign="center">
+					<div class="caption">
+					  </br></br>                      
+                      <h3 class="subheader"><b>$11.49</b></h3>
+					  <h6 class="subheader">Buy 1, Get 1 Free</h6>
+					  <a href="cart.html" class="small button">Add To Cart</a>
+                    </div>
+					</div>
+				</div>
+			</div>
+			<div></br></div>
+			<!--End row1 ...Start row2-->
+						<div class="row">
+			    <div class="small-12 columns">
+				    <div class="small-4 columns">
+                    <a href="product detail_1.html">
+					<div class="image-wrapper overlay-fade-in">					  
+					  <!-- <img src="https://tourneau.scene7.com/is/image/tourneau/DEV9900004?hei=450&wid=300&fmt=png-alpha&resMode=bicub&op_sharpen=1" /> -->
+                      <img src="images/vitamin3.jpg"/>					  
+					  <div class="image-overlay-content">
+						<h2>Gummies</h2>
+						<p class="price">$14.99</p>
+						<!-- <a href="images/vitamin1.jpg" class="button">Get it</a> -->
+					  </div>                      					  
+					</div>
+                    </a>
+					</div>
+					<div class="small-4 columns" valign="center">
+					<div class="caption">
+					  </br></br>
+                      <h4 class="subheader"><b>Gummies</b></h4>
+					  <img src="images/ratestar.jpg" width="94" height="16">                      
+					  <h6 class="subheader">Tablets:90</h6>
+					  <h6 class="subheader">EAWeight:0.2 LBS</h6>
+                    </div>
+					</div>
+					<div class="small-4 columns" valign="center">
+					<div class="caption">
+					  </br></br>                      
+                      <h3 class="subheader"><b>$14.99</b></h3>
+					  <h6 class="subheader">Buy 1, Get 1 Free</h6>
+					  <a href="cart.html" class="small button">Add To Cart</a>
+                    </div>
+					</div>
+				</div>
+			</div>	
+			<div></br></div>
+			<!--End row2 ...Start row3-->  
+            			<div class="row">
+			    <div class="small-12 columns">
+				    <div class="small-4 columns">
+                    <a href="product detail_2.html">
+					<div class="image-wrapper overlay-fade-in">					  
+					  <!-- <img src="https://tourneau.scene7.com/is/image/tourneau/DEV9900004?hei=450&wid=300&fmt=png-alpha&resMode=bicub&op_sharpen=1" /> -->
+                      <img src="images/vitamin5.jpg"/>					  
+					  <div class="image-overlay-content">
+						<h2>Nova Homeopathic</h2>
+						<p class="price">$16.29</p>
+						<!-- <a href="images/vitamin1.jpg" class="button">Get it</a> -->
+					  </div>                      					  
+					</div>
+                    </a>
+					</div>
+					<div class="small-4 columns" valign="center">
+					<div class="caption">
+					  </br></br>
+                      <h4 class="subheader"><b>Nova Homeopathic</b></h4>
+					  <img src="images/ratestar.jpg" width="94" height="16">                      
+					  <h6 class="subheader">Tablets:90</h6>
+					  <h6 class="subheader">EAWeight:1.0 LBS</h6>
+                    </div>
+					</div>
+					<div class="small-4 columns" valign="center">
+					<div class="caption">
+					  </br></br>                      
+                      <h3 class="subheader"><b>$16.29</b></h3>
+					  <h6 class="subheader">Buy 2, Get 1 Free</h6>
+					  <a href="cart.html" class="small button">Add To Cart</a>
+                    </div>
+					</div>
+				</div>
+			</div>			
+            <div></br></div>			
+			<!--End row3 ...Start row4-->
+			            <div class="row">			    
+				<div class="small-12 columns">
+				    <div class="small-4 columns">
+                    <a href="product detail_1.html">
+					<div class="image-wrapper overlay-fade-in">					  
+					  <!-- <img src="https://tourneau.scene7.com/is/image/tourneau/DEV9900004?hei=450&wid=300&fmt=png-alpha&resMode=bicub&op_sharpen=1" /> -->
+                      <img src="images/vitamin1.jpg"/>					  
+					  <div class="image-overlay-content">
+						<h2>Prevagen</h2>
+						<p class="price">$39.99</p>
+						<!-- <a href="images/vitamin1.jpg" class="button">Get it</a> -->
+					  </div>                      					  
+					</div>
+                    </a>
+					</div>
+					<div class="small-4 columns" valign="center">
+					<div class="caption">
+					  </br></br>
+                      <h4 class="subheader"><b>Prevagen</b></h4>
+					  <img src="images/ratestar.jpg" width="94" height="16">                      
+					  <h6 class="subheader">Tablets:150</h6>
+					  <h6 class="subheader">EAWeight:0.6 LBS</h6>
+                    </div>
+					</div>
+					<div class="small-4 columns" valign="center">
+					<div class="caption">
+					  </br></br>                      
+                      <h3 class="subheader"><b>$39.99</b></h3>
+					  <h6 class="subheader">Buy 1, Get 1 Free</h6>
+					  <a href="cart.html" class="small button">Add To Cart</a>
+                    </div>
+					</div>
+				</div>
+		    </div>
+			<div></br></div>
+			<!--End row4--> 
+			<div class="row">
+			    <div class="small-12 columns">
+			        <ul class="pagination pull-right">
+						<li class="disabled"><a href="searchResultPage.html">«</a></li>
+						<li class="active"><a href="searchResultPage.html">1</a></li>
+						<li><a href="searchResultPage.html">2</a></li>
+						<!--<li><a href="searchResultPage.html">3</a></li>
+						<li><a href="searchResultPage.html">4</a></li>
+						<li><a href="searchResultPage.html">5</a></li> -->
+						<li><a href="searchResultPage.html">....</a></li>
+						<li><a href="searchResultPage.html">93</a></li>
+						<li><a href="searchResultPage.html">»</a></li>
+					</ul>
+				</div>
+			</div>
+              </div>  
+            </div>
+            </div>
+          </div>
+     
+     
+         
+
+<footer class="row">
+        <div class="large-12 columns">
+          <hr>
+          <div class="row">
+            <div class="large-6 columns">
+              <p>© Copyright Super Eight.</p>
+            </div>
+            <div class="large-6 columns">
+              <ul class="inline-list right">
+                <li><a href="under_construction.html">Terms of Use</a></li>
+                <li><a href="under_construction.html">Accessibility</a></li>
+                <li><a href="under_construction.html">Privacy Policy</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        </footer>
+</div>
+<div id="fade" class="black_overlayRegistrationLogin"></div>
+</body>
+</html>

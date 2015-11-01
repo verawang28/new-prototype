@@ -1,0 +1,726 @@
+﻿<!doctype html>
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>UPMC Pharmacy</title>
+<link rel="stylesheet" href="css/script.css"/>
+<link rel="stylesheet" href="css/registration.css" />
+<link rel="stylesheet" href="css/foundation.css" />
+<script type="text/javascript" src="script/objectVisibility.js"></script>
+<script type="text/javascript" src="script/textboxBehavior.js"></script>
+<script type="text/javascript" src="script/formValidation.js"></script>
+<script type="text/javascript" src="script/grayOut.js"></script>
+ <script>
+  $(document).foundation({
+    tab: {
+      callback : function (tab) {
+        console.log(tab);
+      }
+    }
+  });
+</script>
+<script>
+  $('#myTabs').on('toggled', function (event, tab) {
+    console.log(tab);
+  });
+</script>
+    <script>
+function showHide1() {
+      document.getElementById("panel2-1").style.display = "block";
+          document.getElementById("panel2-2").style.display = "none";
+          document.getElementById("panel2-3").style.display = "none";
+          document.getElementById("panel2-4").style.display = "none";
+		  document.getElementById("tabtitle1").style.backgroundColor= "#FFFFFF";
+		  document.getElementById("tabtitle2").style.backgroundColor= "#EFEFEF";
+		  document.getElementById("tabtitle3").style.backgroundColor= "#EFEFEF";
+		  document.getElementById("tabtitle4").style.backgroundColor= "#EFEFEF";
+        }
+
+        function showHide2() {
+      document.getElementById("panel2-2").style.display = "block";
+	  
+          document.getElementById("panel2-1").style.display = "none";
+          document.getElementById("panel2-3").style.display = "none";
+          document.getElementById("panel2-4").style.display = "none";
+		  document.getElementById("tabtitle2").style.backgroundColor= "#FFFFFF";
+		  document.getElementById("tabtitle1").style.backgroundColor= "#EFEFEF";
+		  document.getElementById("tabtitle3").style.backgroundColor= "#EFEFEF";
+		  document.getElementById("tabtitle4").style.backgroundColor= "#EFEFEF";
+		  
+        }
+        function showHide3() {
+      document.getElementById("panel2-3").style.display = "block";
+          document.getElementById("panel2-2").style.display = "none";
+          document.getElementById("panel2-1").style.display = "none";
+          document.getElementById("panel2-4").style.display = "none";
+		  document.getElementById("tabtitle3").style.backgroundColor= "#FFFFFF";
+		  document.getElementById("tabtitle1").style.backgroundColor= "#EFEFEF";
+		  document.getElementById("tabtitle2").style.backgroundColor= "#EFEFEF";
+		  document.getElementById("tabtitle4").style.backgroundColor= "#EFEFEF";
+        }
+        function showHide4() {
+      document.getElementById("panel2-4").style.display = "block";
+          document.getElementById("panel2-2").style.display = "none";
+          document.getElementById("panel2-3").style.display = "none";
+          document.getElementById("panel2-1").style.display = "none";
+		  document.getElementById("tabtitle4").style.backgroundColor= "#FFFFFF";
+		  document.getElementById("tabtitle1").style.backgroundColor= "#EFEFEF";
+		  document.getElementById("tabtitle3").style.backgroundColor= "#EFEFEF";
+		  document.getElementById("tabtitle2").style.backgroundColor= "#EFEFEF";
+        }
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+    </script>
+ <script src="http://cdn.chitu.cn/share/lib/jquery-1.11.3.js"></script>
+		<script>
+		$(function(){
+			var $bigImg = $('#big-img__img')
+			$('#small-img__container').on('click','.small-img__li',function(){
+				$bigImg.attr('src',$(this).find('img').attr('src'))
+			})
+		})
+</script>   
+</head>
+
+<body onLoad="MM_preloadImages('images/vitamin2_1.jpg')">
+<div class="large-12 columns">
+ <div class="row">
+      <div class="large-12 columns">
+        <nav class="top-bar" data-topbar>
+          <div class="large-2 columns"> <a href="index.html"><img src="images/upmc_logo.jpg"></a> </div>
+          <div class="large-8 columns">
+            <input type="search" name="searchTerm" placeholder="Search" autocomplete="off" autocapitalize="off" autocorrect="off" data-options="{'limit':3}"
+						data-touch-text="Search" maxlength="100"/>
+          </div>
+                <div> <a href="searchResultPage-View.html"> <img src="images/searhimages.png" width="30" height="30"/> </a> </div>
+        </nav>
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-12 columns">
+        <nav class="top-bar" data-topbar>
+          <section class="top-bar-section">
+            <ul class="left">
+			  <li class="divider"></li>
+			  <li><a href="index.html">Home</a></li>
+              <li class="divider"></li>
+              <li class="has-dropdown"><a href="#">Category</a>
+                <ul class="dropdown">
+                  <li><a href="searchResultPage.html">Allergy & Asthma</a></li>
+                  <li><a href="searchResultPage.html">Braces & Support</a></li>
+                  <li><a href="searchResultPage.html">Cough, Cold & Flu</a></li>
+                  <li><a href="searchResultPage.html">Digestive Health</a></li>
+                  <li><a href="searchResultPage.html">First Aid</a></li>
+                  <li><a href="searchResultPage.html">Pain & Fever</a></li>
+                  <li><a href="searchResultPage.html">Sleep & Snoring Aids</a></li>
+                  <li><a href="searchResultPage.html">Stop Smoking</a></li>
+                </ul>
+              </li>
+			  <li class="divider"></li>
+			  <li><a href="about-us.html">About Us</a></li>
+			  <li class="divider"></li>
+			  <li class="has-dropdown"><a href="#">Contact Us</a>
+                <ul class="dropdown">
+                    <li><a href="#"><strong>UPMC</strong>, 200 Lothrop St, Pittsburgh, PA 15213<br></a></li>
+					<li><a href="#"><strong>Phone</strong>: (412) 647-8762<br></a></li>
+					<li><a href="#"><strong>E-mail</strong>: info@UPMCpharmarcy.com</a></li>
+                </ul>
+              </li>
+              
+            </ul>
+            <ul class="right">
+              <li class="divider"></li>
+              <li > <a id="anchorLogin" href="#" onclick="changeText('anchorLogin');">Hello Mike (Logout)</a>
+                  <div id="loginContainer" class="white_contentLogin"> 
+                   <!--<script type="text/javascript">fadeOutObj('loginContainer', 1);</script>-->
+                    <div id="loginStepContainer">
+                      <div> <strong>Email &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="img/btn_close.png" onclick = "document.getElementById('loginContainer').style.display='none';		document.getElementById('fade').style.display='none'" width="30" height="30"/></strong><br />
+                        <input name="txtUsername" type="text" class="initValStyle" id="txtUsername" onfocus="onFocus(this, 'type your email here')" onblur="onBlur(this)" value="type your email here" size="35" />
+                      </div>
+                      <br />
+                      <div> <strong>Password</strong><br />
+                        <input name="txtPassword" type="password" id="txtPassword" placeholder="password"  size="35" >
+                      </div>
+                      <div>
+                        <input type="checkbox" style="color:white"/>
+                        Remember me </div>
+                      <div >
+                        <input name="btnLogin" type="submit" id="btnLogin" value="Login"  class="small button"  onClick="changeText('btnLogin');"/>
+                        <a href="under_construction.html" style="color:blue; background-color:white; font-size:14px">Forgot your password?</a>
+                      </div>
+                      <div> 
+
+                      <br />
+                      
+                        <div style="color: black ; background-color:white ;  font-size:14px" >Register using:</div> </div>
+                      <div> <a href="#" onClick="changeText('btnLogin');" style="background-color:white"> <img src="images/facebookicon.jpg" width ="25" > </a> <a href="#" onClick="changeText('btnLogin');" style="background-color:white"> <img src="images/pinteresticon.jpg" width ="25" > </a> <a href="#" onClick="changeText('btnLogin');" style="background-color:white"> <img src="images/twittericon.jpg" width ="25" > </a> <a href="#" onClick="changeText('btnLogin');" style="background-color:white"> <img src="images/googleicon.jpg" width ="25" > </a> </div>
+                    </div>
+                  </div>
+                </li>
+              <li class="divider"></li>
+              <li class="divider"></li>
+              <li>
+                  <div id="registerContainer"> <a id ="registerorProfleLink" href = "javascript:void(0)" title="Account Registration" target="_blank" onclick = "callDivRegisterOrProfile('registerorProfleLink');"  style="color:white; align-content:center; font-size:14px">My Account</a> </div>
+                  <div id="registerContainerSub" class="white_contentRegistration">
+                    <table width="625" border="0" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td id="tdEmailErrorScope" colspan="2"><strong>Email<sup style="color:red; font-size:14px" >&nbsp;*</sup></strong><br />
+                          <input name="txtEmail" type="text" id="txtEmail" size="35"  placeholder="username@domain.com"
+                          onblur="validateEmail(this,'tdEmailErrorScope','divEmailErrorMsg')" />
+                          <div id="divEmailErrorMsg" class="errorMsg"> <br />
+                            please ensure the email address you enter is correct e.g. youruser@domain.com </div></td>
+                        <td></td>
+                        <td></td>
+                        <td align="right" valign="top"><img src="img/btn_close.png" onclick = "document.getElementById('registerContainerSub').style.display='none';document.getElementById('fade').style.display='none'" width="30" height="30"/></td>
+                      </tr>
+                      <tr>
+                      <tr>
+                        <td id="tdPasswordErrorScope"><strong>Password <sup style="color:red; font-size:14px" >&nbsp;*</sup></strong>
+                          <input name="txtFirstPassword" type="password"   id="txtFirstPassword" size="15" maxlength= "20" placeholder="Password" value="" /></td>
+                        <td id="tdPasswordErrorScope"><strong>Confirm Password <sup style="color:red; font-size:14px" >&nbsp;*</sup></strong>
+                          <input name="txtRePassword" type="password" id="txtRePassword" size="15" maxlength="20" placeholder="Confirm Password"
+                       onblur= "validatePassword('txtFirstPassword' ,'txtRePassword', 'tdPasswordErrorScope', 'spnPasswordErrorMsg')" /></td>
+                      </tr>
+                      <tr>
+                        <td colspan="2"><div id="spnPasswordErrorMsg" class="errorMsg"> Entered passwords are not matched </div></td>
+                      </tr>
+                        </tr>
+                      
+                      <tr>
+                        <td><strong>First Name <sup style="color:red; font-size:14px" >&nbsp;*</sup></strong>
+                          <input name="txtFN" type="text" id="txtFN" size="30" placeholder="First Name" /></td>
+                        <td><strong>Last Name <sup style="color:red; font-size:14px" >&nbsp;*</sup></strong>
+                          <input name="txtLN" type="text" id="txtLN" size="30" placeholder="Last Name" /></td>
+                      </tr>
+                      <tr>
+                        <td colspan="2"><strong>Address </strong><br />
+                          <input name="txtStreet" type="text" id="txtStreet" size="25" placeholder="Address Line 1 (Optional)"/>
+                          <input name="txtNumber" type="text" id="txtNumber" size="25"  placeholder="Address Line 2 (Optional)"/>
+                          <input name="txtCity" type="text" id="txtCity" size="25" placeholder="City (Optional)"/>
+                          <input name="txtPostal" type="text" id="txtPostal" size="25"  placeholder="Postal Code (Optional)"/>
+                          <select name="ddlCountry" id="ddlCountry" style="width:200px">
+                            <option>United States</option>
+                            <option>Others</option>
+                          </select></td>
+                      </tr>
+                      <tr>
+                        <td style="padding-top:5px" colspan="2"><input name="chkAccept" type="checkbox" id="chkAccept" />
+                          I agree to abide by UPMC. <a href="under_construction.html" style="color:white">Terms & Conditions</a></td>
+                      </tr>
+                      <tr>
+                        <td><input name="btnRegister" type="button" id="btnRegister" class="small button" value="Register" style="width:100px" onclick="fakeAjaxReg('registerContainerSub', 'regCompMsg');	" /></td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div id="regCompMsg" style="display:none;" class="white_contentRegistration"> <br />
+                    <br />
+                    <br />
+                    <br />
+                    <strong style="font-size:16px">Registration complete, </strong><br />
+                    <br />
+                    Thank you very much for registering with UPMC.<br />
+                    Please click the "Done" button below to close this registration page. <br />
+                    To start login, please use "Login" button at top right corner. <br />
+                    <br />
+                    <input type="button" value="Done"  class="small button" style="width:100px" onclick="document.location.reload();" />
+                  </div>
+                  <div id = "myaccountContainer" style="display:none" class="has-dropdown">                  
+                  <ul>
+                  <li ><a href="under_construction.html" >Profile</a></li><br />
+                  <li ><a href="under_construction.html" >Track Order</a></li><br />
+                  <li ><a href="under_construction.html" >My Subscriptions</a></li></ul>
+                  </div>
+    </li>
+              <li class="divider"></li>
+              <li class="divider"></li>
+              <li><a href="cart.html">Cart</a></li>
+              <li class="divider"></li>
+            </ul>
+          </section>
+        </nav>
+      </div>
+    </div>
+
+
+
+
+<div class="row"></br></div>   
+    <div class="row">
+        <div class="large-12 columns">
+        	
+          <span itemscope="" itemtype="http://schema.org/BreadcrumbList">
+            <a href="index.html">
+                 <span style="font-size: medium" itemprop="name">Home</span> 
+                </a>
+			<meta itemprop="position" content="1">
+            >
+            <a href="index.html">
+                <span style="font-size: medium" itemprop="name">Menu</span>
+              	</a>
+            <meta itemprop="position" content="2">
+            >
+			<a href="index.html">
+				<span style="font-size: medium" itemprop="name">Vitamins</span>
+                </a>
+			<meta itemprop="position" content="3">
+            >
+			<a href="index.html">
+				<span style="font-size: medium" itemprop="name">Health Goals</span>
+                </a>
+			<meta itemprop="position" content="4">
+             >
+	      <span style="font-size: medium">Natures Bounty Liquid Filled Absorbable Calcium 1200mg</span> </span>
+        </div>
+  </div>   
+       
+         
+
+    <div class="row">
+        <hr>
+        <div class="large-2 columns">
+            <ul class="small-img__container" id="small-img__container" style="list-style:none">
+            <li class="small-img__li" style="cursor:pointer">
+                <img src="images/vitamin2_3.jpg" alt="" class="small-img__img">
+            </li>
+          
+            <li class="small-img__li" style="cursor:pointer">
+                <img src="images/vitamin2_1.jpg" alt="" class="small-img__img">
+            </li>
+        	</ul>
+        </div>
+    	<div class="large-5 columns">
+    		<div class="big-img__container" style="padding:0px;">
+			<img src="images/vitamin2_3.jpg" alt="" class="big-img__img" id="big-img__img">
+			</div>
+    	</div>
+    
+    <div class="large-5 columns">
+      <h5>
+      <span style="font-size: medium">
+      <span style="font-weight: bold; color:black"> Natures Bounty Liquid Filled Absorbable Calcium 1200mg </span></span>
+      </h5>
+      <div class="large-12 columns">
+          <div class="product" style="text-align: middle">
+            <div class = "productrate">
+              <a href="under_construction.html">
+                  <img src="images/ratestar.jpg" width ="130" >
+              </a>
+              <a href="under_construction.html">
+                   <span style="font-size: small" itemprop="name">Read all Review</span> 
+              </a>
+              <meta itemprop="position" content="1">
+               |
+              <a href="under_construction.html">
+                   <span style="font-size: small" itemprop="name">Write a review</span> 
+              </a>
+            </div> 
+          </div>
+      </div>
+          
+          
+          
+          
+          <div class="large-12 columns">
+          	<div class = "share" style="text-align: middle">
+            	<meta itemprop="position" content="2">
+            	<a href="under_construction.html">
+          			<img src="images/facebookicon.jpg" width ="25" >
+            	</a>
+            	<a href="under_construction.html">
+          			<img src="images/pinteresticon.jpg" width ="25" >
+            	</a>
+            	<a href="under_construction.html">
+          			<img src="images/twittericon.jpg" width ="25" >
+            	</a>
+            	<a href="under_construction.html">
+          			<img src="images/googleicon.jpg" width ="25" >
+            	</a>
+            </div>
+          </div>
+          
+          
+          <div class="large-12 columns">
+            <div class = "row">
+                 <div class="large-2 columns">
+                  <div class = "price" style="text-align: left">
+                    <label style="cursor:default">Price:&nbsp;</label>
+                    </div>
+                   </div>
+                  <div class="large-10 columns">
+                    <div class = "price" style="text-align: left">
+                      <span style="color: #F8020A; font-size: 24px;" itemprop="price">
+                          <s style="text-decoration: line-through">$23.09</s>
+                          $19.99</span>
+                      <span>($0.1 / ea.)</span>
+                      </div>
+                   </div>
+               
+                 </div>
+               </div>
+                  
+          <div class="large-12 columns">
+            <div class = "row">
+                 <div class="large-2 columns">
+        			<label style="cursor:default">quantity:&nbsp;</label>
+		  		</div>
+                <div class="large-2 columns">
+        			<input type="text" value="1" size="1" maxlength="2">   
+		  		</div>
+              	<div class="large-8 columns">
+                </div>
+           	</div>
+         </div>
+          
+          <div class="large-12 columns">
+            <div class = "row">
+              <div class="large-8 columns">
+                  <div "ship1" style="text-align: left">  
+                  <input id="onetimeOnly" type="radio" name="arOption" value="false" checked="checked" onclick="will();">
+                  <label for="onetimeOnly" style="cursor:default">Deliver one time only</label>
+                  </div>
+            	</div>
+                <div class="large-4 columns">
+                </div>
+            </div>
+           
+            <div class = "row">
+                 <div class="large-6 columns" style="margin-left:15px; padding:0; text-align:left; box-sizing:border-box; display:block; width: 43%">
+                   <div style="text-align: left">  
+                    <input id="shipandSave" type="radio"  name="arOption" value="true" onclick="will();">
+                      <label for="shipandSave" style="cursor:default">Ship this item every</label>
+                    </div>
+			  		</div>
+                 <div class="large-2 columns" style="text-align: left">
+                   <div style="text-align: left">  
+                     <select name="ar_frequency" class="visible-for-large" id="ar_frequency" title="Frequency" onclick="makeSelection('shipandSave')">
+                       <option value="1,3">1 Month</option>
+                       <option value="2,3">2 Months</option>
+                       <option value="3,3">3 Months</option>
+                       <option value="4,3">4 Months</option>
+                       <option value="5,3">5 Months</option>
+                       <option value="6,3">6 Months</option>
+                     </select>
+                     <input type="hidden" name="arOption22" id="arOption22" value="true">
+                     </div>
+                 </div>
+                 <div class="large-2 columns">
+                </div>
+			</div>
+              </div>
+              
+			
+          <h6 class="subheader">Save up 13% on this product.</h6>
+          <a href="cart.html" class="small button">Add to Cart</a>
+        </div>
+       </div>
+
+       <div class="row">
+        <hr/>
+        <div class="large-12 columns">	
+      
+        	<ul class="tabs" data-tab role="tablist" >
+              <li class="tab-title active" id="tab1" role="presentation"><a id="tabtitle1" href="#panel2-1" onclick="showHide1()" role="tab" tabindex="0" aria-selected="true" aria-controls="panel2-1" >Details</a></li>
+              <li class="tab-title" id="tab2" role="presentation"><a id="tabtitle2" href="#panel2-2" onclick="showHide2()" role="tab" tabindex="1" aria-selected="false" aria-controls="panel2-2">Ingredients</a></li>
+              <li class="tab-title" id="tab3" role="presentation"><a id="tabtitle3" href="#panel2-3" onclick="showHide3()" role="tab" tabindex="2" aria-selected="false" aria-controls="panel2-3">Reviews</a></li>
+              <li class="tab-title" id="tab4" role="presentation"><a id="tabtitle4" href="#panel2-4" onclick="showHide4()" role="tab" tabindex="3" aria-selected="false" aria-controls="panel2-4">Directions</a></li>
+            </ul><div class="tabs-content">
+              <section role="tabpanel" aria-hidden="false" class="content active" id="panel2-1" >
+   				<style>.nutrition-facts {float:left; width:609px; font:normal 16px/17px Arial, Helvetica, sans-serif; color:#585858;}
+						.nutrition-facts h3 { font-size:16px; font-weight:bold; margin:0 0 10px 0; padding:0}
+						.orange-area{ padding:13px 0 9px 10px; background:#fbf8e7; font-size:12px; border:solid 1px #d7d7d7; border-bottom:0;}
+						.orange-area p { margin: 0 0 5px 0; line-height:13px;}
+						.TablerData{ margin:0; padding:0;  font:normal 12px/17px Arial, Helvetica, sans-serif; color:#585858;}
+						.TablerData table { border:solid 1px #d7d7d7; border-bottom:0; border-left:0;}
+						.TablerData table td, .TablerData table th { border:solid 1px #d7d7d7; border-top:0; border-right:0; padding:5px 11px;}
+						.TablerData table th {background:#e2f4f9; font-weight:bold;  padding:7px 5px 8px 11px; text-align:left}
+						.TablerData table th ~ th { text-align:center;}</style>
+				<div class="productIngredients" id="prodDesc"> 
+    				<p>
+    				</p><p>Calcium is the primary mineral responsible for strong, healthy bones. These rapid-release liquid softgels are enhanced with Vitamin D3 to aid with Calcium absorption and contribute to immune health.<br></p>
+                    <ul><li>May reduce the risk of osteoporosis.</li>
+                    <li>High-potency source of bone-healthy calcium and Vitamin D3.</li>
+                    <li>Provides support for strong, healthy bones.</li>
+                    <li>Adequate Calcium and Vitamin D throughout life, as part of a well-balanced diet, may reduce the risk of osteoporosis.</li>
+                    <li>Mineral supplement.</li>
+                    <li>Rapid release liquid softgel.</li>
+                    <li>1000 IU Vitamin D3.</li>
+                    <li>1200mg Calcium.</li>
+                    <li>No artificial flavor, preservatives, sugar, starch, milk, lactose, gluten, wheat, yeast, fish. Sodium free.</li>
+                    <li>Adequate calcium throughout life, as part of a well-balanced diet, may reduce the risk of osteoporosis.</li></ul>
+                    <br>Disclaimer: *These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure or any disease.<p></p>
+                    <p></p>
+				</div>
+				<dl class="refinements">
+				<dt>Formulation:</dt>
+						<dd>Softgels</dd>
+					<dt>Health Goals:</dt>
+						<dd>Bone &amp; Joint Health</dd>
+					<dt>Quantity:</dt>
+						<dd>701-800 CT</dd>
+					<dt>Potency:</dt>
+						<dd>1000-2000 mg</dd>
+					</dl>
+					<style type="text/css">.nutri-facts td,.nutri-facts th{border:1px solid #ddd;}
+						.nutri-facts th {background-color:#F8E0F7;}
+						.nutri-facts .bold{font-weight:bold;}
+						.nutri-facts .center{text-align:center}
+						.nutri-facts{width:600px;text-align:left;border-width: 0 0 1px 1px;border-spacing: 0;border-collapse: collapse;border-style: solid;}</style>
+	
+                </section>
+                <section role="tabpanel" aria-hidden="true" class="content" id="panel2-2" style="display:none">
+                  <div id="panel2-2" class="ui-tabs-panel ui-widget-content ui-corner-bottom ui-tabs-hide">
+					<style>.nutrition-facts {float:left; width:609px; font:normal 16px/17px Arial, Helvetica, sans-serif; color:#585858;}
+						.nutrition-facts h3 { font-size:16px; font-weight:bold; margin:0 0 10px 0; padding:0}
+						.orange-area{ padding:13px 0 9px 10px; background:#fbf8e7; font-size:12px; border:solid 1px #d7d7d7; border-bottom:0;}
+						.orange-area p { margin: 0 0 5px 0; line-height:13px;}
+						.TablerData{ margin:0; padding:0;  font:normal 12px/17px Arial, Helvetica, sans-serif; color:#585858;}
+						.TablerData table { border:solid 1px #d7d7d7; border-bottom:0; border-left:0;}
+						.TablerData table td, .TablerData table th { border:solid 1px #d7d7d7; border-top:0; border-right:0; padding:5px 11px;}
+						.TablerData table th {background:#e2f4f9; font-weight:bold;  padding:7px 5px 8px 11px; text-align:left}
+						.TablerData table th ~ th { text-align:center;}</style>
+                   <div class="productIngredients" id="prodIngd">
+                    <p>Other Ingredients: Soybean Oil, Gelatin, Vegetable Glycerin, Soy Lecithin. Contains &lt;2% of: Beeswax, Corn Oil, Sorbitol, Titanium Dioxide Color. ***Percent Daily Values are based on a 2,000 calorie diet.</p>
+                    <div class="nutrition-facts">
+                    	<h3>Nutrition Facts</h3>
+                    <div class="orange-area">
+                    	<p><strong>Serving Size: </strong>2 Softgels</p>
+                        <p><strong>Servings Per Container: </strong>100</p></div>
+                    <div class="TablerData">
+                    	<table width="100%" cellspacing="0" cellpadding="0" border="0">
+                          <tbody>
+                           <tr><th width="360">Nutrient</th>
+                        	<th width="141">Amount per Serving</th>
+                            <th width="103">% Daily Value</th></tr>
+                           <tr><td>Calories</td>
+                           	<td align="center">15</td>
+                            <td align="center">&nbsp;</td></tr>
+                            <tr><td>Calories from Fat</td>
+                            	<td align="center">10</td>
+                                <td align="center">&nbsp;</td></tr>
+                            <tr><td>Total Fat</td>
+                            	<td align="center">1g</td>
+                                <td align="center">2%***</td></tr>
+                            <tr><td>Vitamin D (as D3 Cholecalciferol)</td>
+                            	<td align="center">1000 IU</td>
+                                <td align="center">250%</td></tr>
+                            <tr><td>Calcium (as Calcium Carbonate)</td>
+                            	<td align="center">1200mg (1.2g)</td>
+                                <td align="center">120%</td></tr></tbody></table></div></div>
+                                <p></p>
+					 </div
+        		    ><style type="text/css">.nutri-facts td,.nutri-facts th{border:1px solid #ddd;}
+						.nutri-facts th {background-color:#F8E0F7;}
+						.nutri-facts .bold{font-weight:bold;}
+						.nutri-facts .center{text-align:center}
+						.nutri-facts{width:600px;text-align:left;border-width: 0 0 1px 1px;border-spacing: 0;border-collapse: collapse;border-style: solid;}</style>
+		          </div>
+                </section>
+                
+               <section role="tabpanel" aria-hidden="true" class="content" id="panel2-3" style="display:none">
+            	  <div class="large-12 column" style="display: block; float:left">
+                	 <div class="small-4 columns" style="float:left; margin-left:0pxS">
+                        <p class="price">
+                            <select name="select" onchange="javascript:location.href = this.value;">
+                                <option value="#panel2-3" selected="">Sort By</option>
+                                <option value="#panel2-3">Highest rating</option>
+                                <option value="#panel2-3">Lowest rating</option>
+                                <option value="#panel2-3">Newest</option>
+                                <option value="#panel2-3">Staff reviews</option>
+                                <option value="#panel2-3">The same age range</option>
+                            </select>
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="tab-content" style="display: block;">
+                    <div class="single-comment blog-page" style="border:1px solid #C7EEFB; overflow:hidden; padding:20px 15px 5px 15px">
+                      <div class="avatar float-left" style="float:left">
+                          <img src="images/avatar.png">
+                      </div>
+                      <div class="comment-text blog-single-entry" style="margin:0px 0px 0px 65px">
+                      	<span>
+                      	  <div class="form-name float-left" style="float:left">
+                             <span class="name" style="display:block; font-size:16px; font-weight:bold; color: #2ba6cb">tina55</span>
+                             <span class="date" style="display:block; font-size:12px; font-weight:bold; color: #6DC4E0">January 12, 2012, Wednesday, at 10:23 a.m.</span>
+                             <p style="margin-top: 18px; margin-bottom:18px; margin-right:0px; margin-left:0px">These pills are on the big side but are nice and
+								soft so they go down easy.</p>
+                          
+                          </div>
+                          <div class="form-name float-right" style="float:right">
+                             <img src="images/ratestaronly.jpg" style="width: 95px">
+                          </div>
+                        </span> 
+                     
+                       <!-- <span class="date" style="display:block; font-size:12px; font-weight:bold; color: #6DC4E0">January 12, 2012, Wednesday, at 10:23 a.m.</span>-->
+                       
+                        </div>
+                      
+                     	
+                    </div>
+                    <br></br> 
+					<div class="single-comment blog-page" style="border:1px solid #C7EEFB; overflow:hidden; padding:20px 15px 5px 15px">
+                      <div class="avatar float-left" style="float:left">
+                          <img src="images/avatar.png">
+                      </div>
+                      <div class="comment-text blog-single-entry" style="margin:0px 0px 0px 65px">
+                      	<span>
+                      	  <div class="form-name float-left" style="float:left">
+                             <span class="name" style="display:block; font-size:16px; font-weight:bold; color: #2ba6cb">smith0202</span>
+                             <span class="date" style="display:block; font-size:12px; font-weight:bold; color: #6DC4E0">January 12, 2012, Wednesday, at 10:23 a.m.</span>
+                             <p style="margin-top: 18px; margin-bottom:18px; margin-right:0px; margin-left:0px">These pills are on the big side but are nice and
+								soft so they go down easy.</p>
+                     
+                          </div>
+                          <div class="form-name float-right" style="float:right">
+                             <img src="images/ratestaronly.jpg" style="width: 95px">
+                          </div>
+                        </span> 
+                        </div>  	                     
+                  </div>			
+				  <div class="comment-form-container" style="padding:0px 10px 0px 0px">
+                          <span class="new-comment-heading" style="display: block; color:#2ba6cb; font-size:16px; font-weight: bold; margin:35px 0px 25px 0px">Post Your Comment</span>
+                          <div class="form-name float-left" style="margin:0px 0px 15px 0px; width: 10%; float:left; padding:0; font-size:100%; vertical-align: baseline">
+                              <span style="display: block; color: #6DC4E0; font-size: 12px; font-style: italic; width: 100px">Choose your Age</span>
+                             
+                          </div>
+                          <div class="form-name float-left" style="margin:0px 0px 15px 0px; width: 84%; float:left; padding:0; font-size:100%; vertical-align: baseline">
+                             
+                              <div class="small-3 columns" style="float:left; margin-left:0pxS">
+                                  <p class="price">
+                                      <select name="select" >
+                                          <option selected="">age range</option>
+                                          <option >Below 20</option>
+                                          <option >20-30 years old</option>
+                                          <option >30-40 years old</option>
+                                          <option >40-50 years old</option>
+                                          <option >50-60 years old</option>
+                                          <option >Up to 60</option>
+                                      </select>
+                                  </p>
+                              </div>
+                          </div>
+                          <br class="clear" style="clear:both">
+                          <div class="form-comment" style="margin:0; padding:0; border:0; font-size:100%; vertical-align:baseline">
+                              <span style="display:block; color:#6DC4E0; font-size:12px; font-style:italic">Comment</span>
+                              <textarea name="comments" rows="4" cols="20" class="txtarea-comment" style="margin:0px 0px 15px 0px; width: 100%; background-color:#ECECEC"></textarea> 
+                          </div>
+                          <a href="#" class="small button"><span class="button-big">Submit your comment</span></a>
+                  </div>	  
+                </div>   
+			               
+              </section>
+              
+              <section role="tabpanel" aria-hidden="true" class="content" id="panel2-4" style="display:none">
+                <h6 style="color:black">For adults, take 2 softgels daily, preferably with meals.</h6>
+              </section>
+            </div>
+         </div>  
+        </div> 
+
+
+        <div class="row">
+        <hr>
+        <div class="large-12 columns">
+          <h4 style="color:black">You might also like:</h4>
+         
+        </div>
+        </div>
+        
+      <div class="row">
+    <div class="large-3 small-6 columns"> <a href="product detail_1.html">
+      <div class="image-wrapper overlay-fade-in"> 
+        <!-- <img
+src="https://tourneau.scene7.com/is/image/tourneau/DEV9900004?hei=450&wid=300&fmt=png-alpha&resMode=bicub&op_sharpen=1"
+/> --> 
+        <img src="images/vitamin1.jpg"/>
+        <div class="image-overlay-content">
+          <h2>Prevagen</h2>
+          <p class="price">$39.99</p>
+          <!-- <a href="images/vitamin1.jpg" class="button">Get it</a> --> 
+        </div>
+      </div>
+      </a> </div>
+    <div class="large-3 small-6 columns"> <a href="product detail_2.html">
+      <div class="image-wrapper overlay-fade-in"> 
+        <!-- <img
+src="https://tourneau.scene7.com/is/image/tourneau/DEV9900004?hei=450&wid=300&fmt=png-alpha&resMode=bicub&op_sharpen=1"
+/> --> 
+        <img src="images/vitamin2.jpg"/>
+        <div class="image-overlay-content">
+          <h2>Natures Bounty</h2>
+          <p class="price">$9.99</p>
+          <!-- <a href="images/vitamin2.jpg" class="button">Get it</a> --> 
+        </div>
+      </div>
+      </a> </div>
+    <div class="large-3 small-6 columns"> <a href="product detail_1.html">
+      <div class="image-wrapper overlay-fade-in"> 
+        <!-- <img
+src="https://tourneau.scene7.com/is/image/tourneau/DEV9900004?hei=450&wid=300&fmt=png-alpha&resMode=bicub&op_sharpen=1"
+/> --> 
+        <img src="images/vitamin3.jpg"/>
+        <div class="image-overlay-content">
+          <h2>Gummies</h2>
+          <p class="price">$14.99</p>
+          <!-- <a href="images/vitamin3.jpg" class="button">Get it</a> --> 
+        </div>
+      </div>
+      </a> </div>
+    <div class="large-3 small-6 columns"> <a href="product detail_2.html">
+      <div class="image-wrapper overlay-fade-in"> 
+        <!-- <img
+src="https://tourneau.scene7.com/is/image/tourneau/DEV9900004?hei=450&wid=300&fmt=png-alpha&resMode=bicub&op_sharpen=1"
+/> --> 
+        <img src="images/vitamin5.jpg"/>
+        <div class="image-overlay-content">
+          <h2>Nova Homeopathic</h2>
+          <p class="price">$16.29</p>
+          <!-- <a href="images/vitamin4.jpg" class="button">Get it</a> --> 
+        </div>
+      </div>
+      </a> </div>
+  </div>
+  
+
+
+<footer class="row">
+        <div class="large-12 columns">
+          <hr>
+          <div class="row">
+            <div class="large-6 columns">
+              <p>© Copyright Super Eight.</p>
+            </div>
+            <div class="large-6 columns">
+              <ul class="inline-list right">
+                <li><a href="under_construction.html">Terms of Use</a></li>
+                <li><a href="under_construction.html">Accessibility</a></li>
+                <li><a href="under_construction.html">Privacy Policy</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        </footer>
+</div>
+<div id="fade" class="black_overlayRegistrationLogin"></div>
+</body>
+</html>
